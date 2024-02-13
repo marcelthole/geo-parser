@@ -1,5 +1,5 @@
 {
-    "name": "creof/geo-parser",
+    "name": "marcelthole/geo-parser",
     "type": "library",
     "description": "Parser for geography coordinate strings",
     "keywords": ["parser", "lexer", "string", "text", "geometry", "geography", "spatial", "geo", "coordinate"],
@@ -9,6 +9,9 @@
             "email": "dlambert@dereklambert.com"
         }
     ],
+    "replace": {
+        "creof/geo-parser": "2.*"
+    },
     "license": "MIT",
     "require": {
         "php":            ">=8.1",
