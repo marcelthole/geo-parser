@@ -51,8 +51,7 @@ class ParserTest extends TestCase
             $value = [$value];
         }
         foreach ($expected as $key => $expectedValue) {
-            self::assertStringStartsWith($expectedValue, $value[$key]);
-            self::assertStringEndsWith($expectedValue, $value[$key]);
+            self::assertSame((string) $expectedValue, (string) $value[$key]);
         }
     }
 

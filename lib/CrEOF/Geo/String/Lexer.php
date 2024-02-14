@@ -71,7 +71,7 @@ class Lexer extends AbstractLexer
                 return self::T_INTEGER;
             }
 
-            $value = rtrim(sprintf('%f', $value), '0');
+            $value = rtrim(sprintf('%.8F', $value), '0');
 
             return self::T_FLOAT;
         }
